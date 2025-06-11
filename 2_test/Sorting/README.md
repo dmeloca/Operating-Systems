@@ -1,17 +1,17 @@
-\# Sorting
+# Sorting
 
 
 
-\## Tasks
+## Tasks
 
-* \[ ] Make Code
+- [ ] Make Code
 
-* \[ ] Test Arrays for validating time
-
-
+- [ ] Test Arrays for validating time
 
 
-\## Info
+
+
+## Info
 
 Page 27
 
