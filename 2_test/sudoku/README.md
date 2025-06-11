@@ -1,16 +1,16 @@
-\# Sudoku Validator
+# Sudoku Validator
 
 
 
-\## Tasks
+## Tasks
 
-- \[ ] Make Code
+- [ ] Make Code
 
-- \[ ] Test cases (valid, invalid)
+- [ ] Test cases (valid, invalid)
 
 
 
-\## Info
+## Info
 
 Page 25
 
