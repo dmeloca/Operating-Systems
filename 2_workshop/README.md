@@ -1,15 +1,15 @@
 # 2nd workshop: Threads
 ## Tasks
-- [x] 1
-- [x] 2
-- [ ] 3
+- [x] 1 -| Daniel
+- [x] 2 -| Daniel
+- [ ] 3 -| Daniel 
 - [ ] 4
 - [ ] 5
 - [ ] 6
 - [ ] 7
 - [ ] 8
 - [ ] 9
-- [ ] 10
+- [x] 10 -| Daniel
 
 ## info
 - **Classroom**
