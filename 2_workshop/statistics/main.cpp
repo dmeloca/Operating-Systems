@@ -1,44 +1,50 @@
 #include <iostream>
 #include <vector>
+#include <thread>
 
-float average(int n, std::vector<int> v) {
+void average(int n, const std::vector<int>& v) {
     int sum = 0;
-    for (int i = 0; i < n; i++) {
-        sum += v[i];
+    for (int x : v) {
+        sum += x;
     }
-    return sum / n;
+    std::cout << "The average value is: " << sum / n << std::endl;
 }
 
-int get_max(std::vector<int> v) {
+void get_max(const std::vector<int>& v) {
     int max = v[0];
-    for (int& x: v) {
-       if (x > max) {
+    for (int x : v) {
+        if (x > max) {
             max = x;
         }
     }
-    return max;
+    std::cout << "The maximum value is: " << max << std::endl;
 }
 
-int get_min(std::vector<int> v) {
+void get_min(const std::vector<int>& v) {
     int min = v[0];
-    for (int& x: v) {
+    for (int x : v) {
         if (x < min) {
             min = x;
         }
     }
-    return min;
+    std::cout << "The minimum value is: " << min << std::endl;
 }
 
 int main() {
-    int n = 0;
+    int n;
     std::cin >> n;
     std::vector<int> arr(n);
-    for (int& x: arr) {
+    for (int& x : arr) {
         std::cin >> x;
     }
-    std::cout << "The avarage value is: " << average(n, arr) << std::endl;
-    std::cout << "The minimum value is: " << get_min(arr) << std::endl;
-    std::cout << "The maximum value is: " << get_max(arr) << std::endl;
+
+    std::thread t1(average, n, std::ref(arr));
+    std::thread t3(get_min, std::ref(arr));
+    std::thread t2(get_max, std::ref(arr));
+
+    t1.join();
+    t2.join();
+    t3.join();
 
     return 0;
 }
