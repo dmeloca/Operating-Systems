@@ -5,7 +5,7 @@
 - [X] 3 -| Samuel
 - [ ] 4
 - [ ] 5
-- [ ] 6 -| Daniel
+- [x] 6 -| Daniel
 - [x] 7 -| Samuel
 - [ ]  8
 - [x] 9 -| Samuel
