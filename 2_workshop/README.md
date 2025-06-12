@@ -2,13 +2,13 @@
 ## Tasks
 - [x] 1 -| Daniel
 - [x] 2 -| Daniel
-- [ ] 3
+- [X] 3 -| Samuel
 - [ ] 4
 - [ ] 5
 - [ ] 6 -| Daniel
-- [ ] 7
-- [ ] 8
-- [ ] 9
+- [x] 7 -| Samuel
+- []  8
+- [x] 9 -| Samuel
 - [x] 10 -| Daniel
 
 ## info
