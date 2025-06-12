@@ -5,7 +5,7 @@ HOST = 'localhost'
 PORT = 12345
 
 waiting_clients = []  # Client stack waiting for play
-lock = threading.Lock()  # Avoid run condition
+lock = threading.Lock()  # Avoid race condition
 
 def check_winner(j1, j2):
     if j1 == j2:
