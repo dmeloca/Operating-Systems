@@ -7,7 +7,7 @@
 - [ ] 5
 - [ ] 6 -| Daniel
 - [x] 7 -| Samuel
-- []  8
+- [ ]  8
 - [x] 9 -| Samuel
 - [x] 10 -| Daniel
 
