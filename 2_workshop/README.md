@@ -3,11 +3,11 @@
 - [x] 1 -| Daniel
 - [x] 2 -| Daniel
 - [X] 3 -| Samuel
-- [ ] 4
-- [ ] 5
+- [x] 4 -| Sebastian
+- [x] 5 -| Sebastian
 - [x] 6 -| Daniel
 - [x] 7 -| Samuel
-- [ ]  8
+- [x] 8 -| Sebastian
 - [x] 9 -| Samuel
 - [x] 10 -| Daniel
 
