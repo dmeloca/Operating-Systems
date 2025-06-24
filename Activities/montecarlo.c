@@ -26,7 +26,6 @@ void* monte_carlo_pi(void* arg) {
         }
     }
 
-    // Update global count with mutex protection
     pthread_mutex_lock(&count_mutex);
     global_inside_count += local_count;
     pthread_mutex_unlock(&count_mutex);
@@ -41,19 +40,16 @@ int main() {
     int points_per_thread = TOTAL_POINTS / NUM_THREADS;
     pthread_mutex_init(&count_mutex, NULL);
 
-    // Create threads
     for (int i = 0; i < NUM_THREADS; i++) {
         thread_data[i].points_per_thread = points_per_thread;
-        thread_data[i].seed = time(NULL) ^ (i * 10007);  // Unique seed for each thread
+        thread_data[i].seed = time(NULL) ^ (i * 10007); 
         pthread_create(&threads[i], NULL, monte_carlo_pi, &thread_data[i]);
     }
 
-    // Join threads
     for (int i = 0; i < NUM_THREADS; i++) {
         pthread_join(threads[i], NULL);
     }
 
-    // Estimate π
     double pi_estimate = 4.0 * global_inside_count / TOTAL_POINTS;
     printf("Estimated π = %.6f\n", pi_estimate);
 
